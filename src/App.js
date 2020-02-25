@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import Header from './components/Header'
+import Formulario from './components/Formulario'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+
+function App (){
+  return(
+
+    <Fragment>
+      <Header/>
+      <div className='container mt-5'>
+        <div className='row'>
+          <Formulario />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
-    );
-  }
+    </Fragment>
+
+  )
 }
 
 export default App;
